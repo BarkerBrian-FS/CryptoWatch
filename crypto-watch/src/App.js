@@ -3,6 +3,7 @@ import axios from 'axios';
 import Coins from './components/Coins';
 import Coin from './routes/Coin';
 import Nav from './components/Nav';
+import Footer from './components/Footer'
 import {Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
             <Route path=':coinId' element={<Coin />}/>
         </Route>
       </Routes>
-      
+      <Footer/>
     </>
   )
 }
