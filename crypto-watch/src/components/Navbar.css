@@ -1,0 +1,18 @@
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    font-size: 2rem;
+    color: #ffc300;
+}
+
+.gold{
+    color: #ffc300;
+}
+
+.firstword{
+    color: white ;
+}

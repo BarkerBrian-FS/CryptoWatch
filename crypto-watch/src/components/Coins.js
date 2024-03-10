@@ -1,4 +1,5 @@
 import React from 'react'
+import CoinItem from './CoinItem'
 
 const coins = (props) => {
   return (
@@ -12,6 +13,11 @@ const coins = (props) => {
                 <p className='hide-mobile'>Volume</p>
                 <p className='hide-mobile'>Mkt Cap</p>
             </div>
+            {props.coins.map(coins => {
+                return(
+                    <CoinItem coins={coins} key={coins.id}/>
+                )
+            })}
         </div>
     </div>
   )
