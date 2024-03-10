@@ -7,7 +7,7 @@ function App() {
 
   const [coins, setCoins]= useState([]);
 
-  const url ='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10'
+  const url ='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=50'
 
   useEffect(()=>{
     axios.get(url).then((response) => {
