@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
-import './App.css';
+import Coins from '../src/components'
+
 
 function App() {
 
   const [coins, setCoins]= useState([]);
 
+  const url ='https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=10'
+
   useEffect(()=>{
-    axios.get('https://api.coingecko.com/api/v3/coins/markets').then((response) => {
+    axios.get(url).then((response) => {
       setCoins(response.data)
       console.log(response.data)
     }).catch((error) => {
@@ -17,9 +20,9 @@ function App() {
 
   return (
     <>
-
+      <Coins coins={coins}/>
     </>
-  );
+  )
 }
 
 export default App;
