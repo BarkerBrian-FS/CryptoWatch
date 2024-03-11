@@ -3,9 +3,9 @@ import coinGecko from '../images/coinGecko.png';
 
 const Footer = () => {
   return (
-    <div>
-        <h1>Powered By</h1>
-        <img src={coinGecko} alt='Coin Gecko'></img>
+    <div className='footer'>
+        <h1 className='footTag'>Powered By</h1>
+        <img className='footImg' src={coinGecko} alt='Coin Gecko'></img>
     </div>
   )
 };
