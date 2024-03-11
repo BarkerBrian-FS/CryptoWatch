@@ -57,5 +57,21 @@ img{
     align-items: center;
 }
 
+/* Footer Styling*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footTag{
+    font-size: 1.3rem;
+}
+
+.footImg{
+    width: 180px;
+}
+
 
 
