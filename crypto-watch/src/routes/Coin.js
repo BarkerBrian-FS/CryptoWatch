@@ -1,14 +1,14 @@
-import axios from 'axios'
-import { useParams } from 'react-router-dom'
-import React, { useState, useEffect } from 'react'
-import DOMPurify from 'dompurify'
+import axios from 'axios';
+import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import DOMPurify from 'dompurify';
 
-import './Coin.css'
+import './Coin.css';
 
 const Coin = () => {
 
-    const params = useParams()
-    const [coin, setCoin] = useState({})
+    const params = useParams();
+    const [coin, setCoin] = useState({});
 
     const url = `https://api.coingecko.com/api/v3/coins/${params.coinId}`
 
